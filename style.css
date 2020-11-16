@@ -24,6 +24,12 @@ body {
     background-color: blue;
     color: white;
     border: solid 5px black;
+    width: auto;
+    height: 50px;
+}
+.previewLastNumber {
+    text-align: end;
+    padding: 0px;
 }
 div {
     padding: 10px;
