@@ -29,9 +29,7 @@ let button
 resultBox.appendChild(previewLastNumber)
 mainBox.appendChild(resultBox)
 
-function safeEval() {
-    returnFunction('return' + resultBox.textContent)
-}
+
 
 
 
@@ -131,11 +129,10 @@ for(let i = 0; i < tab.length; i++) {
 }
 
 
-document.body.addEventListener('keypress', function (e){
-    
-    if(e.code == 'Enter')
-    resultBox.textContent = safeEval()
-    console.log(e)
+document.body.addEventListener('keypress', function (e) {
+    if (e.code === "Enter") {
+        resultBox.innerHTML = Function('return ' + resultBox.innerHTML)();
+    }
 })
 
 

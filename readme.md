@@ -19,7 +19,7 @@ Our goals for this exercie was to make a basic calculator using only Javascript.
 
 ## Problem
 
--  It's not possible to use 'Enter' from the keyboard to equal the operation. 
+
 -  when you enter a number, the display change his height
 - no bonus made 
   
@@ -28,6 +28,6 @@ Our goals for this exercie was to make a basic calculator using only Javascript.
 No
 
 ## Preview
-![Preview](./preview_calculette_js.png)
+![Preview](./img/preview_calculette_js.pngpreview_calculette_js.png)
 
 [Pages](https://nalessoaxel.github.io/calculator/)
