@@ -1,18 +1,22 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #F1F2B5, #135058);
+    
+    
 }
 
 
 .flex{
     display: flex;
     flex-direction: column;
-   
     padding: 24px;
-    border: solid 5px black;
-    width: 300px;
-    height: auto;
-    background-color: rgb(85, 85, 85);
+    border: solid 2px black;
+    background-color: #000000;
+    margin: 150px;
 
 }
 .flexrow {
@@ -20,12 +24,14 @@ body {
     flex-direction: row;
 }
 .result {
-    text-align: end;
-    background-color: blue;
-    color: white;
-    border: solid 5px black;
-    width: auto;
-    height: 50px;
+   background-color:rgba(255, 255, 255, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 70px;
+    border-radius: 10px;
+    font-size: 30px;
 }
 .previewLastNumber {
     text-align: end;
@@ -33,18 +39,41 @@ body {
 }
 div {
     padding: 10px;
+    margin: 2px;
 }
 .operand {
-    background-color: rgb(207, 137, 5);
-    color: white;
-    text-align: center;
-    width: 100%;
-    border: white 2px solid;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color:rgba(238, 176, 60, 0.75);
+    margin: 10px;
+    width: 60px;
+    height: auto;
+    
+}
+.operand:hover {
+    background: linear-gradient(to right, #F1F2B5, #135058);
 }
 .button {
-    background-color: grey;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background-color:rgba(255, 255, 255, .75);
+    margin: 10px;
+    width: 60px;
+    height: auto;
+}
+.button:hover {
+    background: linear-gradient(to right, #F1F2B5, #135058);
+}
+.historique {
+    display: flex;
+    padding: 24px;
+    width: 300px;
+    height: 100px;
+    background-color: #000000;
     color: white;
-    width: 100%;
-    border: white 2px solid;
-    text-align: center;
+
 }
