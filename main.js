@@ -114,7 +114,16 @@ for(let i = 0; i < tab.length; i++) {
                 }
             })
                 break
-    
+                case '*': 
+                button.addEventListener('click', function(){
+                    if (resultBox.textContent.slice(-1) == '*') {
+                        resultBox.textContent += ''
+        
+                    } else {
+                        resultBox.textContent += '*'
+                    }
+                })
+                    break
         default: 
             button.addEventListener('click', function () {
                 resultBox.textContent += tab[i]
